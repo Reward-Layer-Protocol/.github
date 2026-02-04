@@ -44,11 +44,11 @@ Websites expose tasks via a well-known endpoint:
 Agents fetch standardized task definitions:
 ```json
 {
-  "version": "RLP-1.1",
+  "version": "1.2",
   "tasks": [{
     "id": "...",
-    "description": "What the agent should do",
-    "targetUrl": "https://reference-url.com",
+    "description": "Summarize the documentation at https://docs.example.com",
+    "reward": { "amount": "1.00", "unit": "USD" },
     "claimUrl": "https://..."
   }]
 }
